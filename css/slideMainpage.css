@@ -1,0 +1,312 @@
+body {
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", FontAwesome, sans-serif;
+    background-color: #dddddd;
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 10px 15px;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.ace-navbar-trans {
+    color: white;
+    font-size: 16px;
+    border-radius: 0;
+    margin: 0;
+    padding: 20px 15px;
+    background-color: transparent;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+.ace-navbar-trans a {
+    color: white;
+    border-radius: 0px;
+    -webkit-transition: background 0.2s ease-in-out;
+    -moz-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+}
+
+.ace-navbar-trans a:hover {
+
+    color: #0275d8;
+    background-color: #FFFFFF;
+}
+
+
+
+.ace-navbar-blue {
+    background-color: #0275d8;
+    padding: 0 15px;
+}
+
+.ace-navbar-gray {
+    background-color: #484445;
+    padding: 5px 15px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .clear {
+        clear: both;
+    }
+}
+
+
+/*-------------------banner--------------------------*/
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#banner {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+    position: relative;
+}
+
+#banner_img {
+	
+    display: block;
+    position: relative;
+}
+
+#banner_img li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    display: none;
+}
+/*设置背景图片-------开始*/
+
+#banner_img li.item1 { background-image: url(/images/1.jpg); display: list-item;  background-size: 100%;  
+    background-position:center;
+	}
+#banner_img li.item2 { background-image: url(/images/2.jpg);  background-size: 100%;  
+    background-position:center;
+    }
+#banner_img li.item3 { background-image: url(/images/3.jpg);  background-size: 100%;  
+    background-position:center;
+    }
+#banner_img li.item4 { background-image: url(/images/4.jpg);  background-size: 100%;  
+    background-position:center;
+     }
+
+
+#banner_img .ad_img {
+    position: absolute;
+    left: 10px;
+	right: 10px;
+    width: 1350px;
+    height: 1000px;
+    
+}
+
+#banner_img .ad_img img{
+    width: 100%;
+    height: 100%;
+}
+
+/*-----------------------search-------------------------------*/
+
+#search {
+    position: relative;
+    display: block;
+    top:160px;
+}
+
+#searchForm {
+    padding:18px 0;
+}
+
+.search-brand {
+    float: left;
+    height: 70px;
+    padding: 10px 15px;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/*-----------------------ace-card----------------------*/
+#ace-card {
+    position: relative;
+    display: block;
+    top:250px;
+}
+
+.ace-card-item {
+    color: white;
+    display: inline-block;
+    padding: 0px;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(20,20,20,0.5);
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.ace-card-item h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.ace-card-item span {
+    font-size: 40px;
+}
+
+#ace-card a:hover {
+    width: 140px;
+    height: 140px;
+    padding: 10px;
+    color: white;
+}
+
+#ace-card .select {
+    background-color: #1B9AF7;
+}
+
+#card-item1.select {
+    background-color: #169c7c;
+}
+#card-item2.select {
+    background-color: #474947;
+}
+#card-item3.select {
+    background-color: #bd1619;
+}
+#card-item4.select {
+    background-color: #1473b7;
+}
+
+@media screen and (max-width: 450px) {
+    #search {
+        position: relative;
+        display: block;
+        top: 70px;
+    }
+
+    #ace-card {
+        position: relative;
+        display: block;
+        top: 100px;
+    }
+}
+@media screen and (max-width: 350px) {
+    #search {
+        position: relative;
+        display: block;
+        top: 90px;
+    }
+
+    #ace-card {
+        position: relative;
+        display: block;
+        top: 120px;
+    }
+
+    .ace-card-item {
+        color: white;
+        display: inline-block;
+        padding: 0px;
+        width: 100px;
+        height: 100px;
+        background-color: rgba(20,20,20,0.5);
+        margin: 20px;
+        border-radius: 10px;
+        text-align: center;
+
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    #ace-card a:hover {
+        width: 110px;
+        height: 110px;
+        padding: 10px;
+        color: white;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #search {
+        position: relative;
+        display: block;
+        top: 200px;
+    }
+
+    #ace-card {
+        position: relative;
+        display: block;
+        top: 350px;
+    }
+
+    .ace-card-item {
+        color: white;
+        display: inline-block;
+        padding: 0px;
+        width: 150px;
+        height: 150px;
+        background-color: rgba(20,20,20,0.5);
+        margin: 20px;
+        border-radius: 10px;
+        text-align: center;
+
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    #ace-card a:hover {
+        width: 180px;
+        height: 180px;
+        padding: 10px;
+        color: white;
+    }
+
+    .ace-card-item h3 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .ace-card-item span {
+        font-size: 60px;
+    }
+}
+
+/*----------------------------------------What's new-----------------------------------------*/
+.whatsnew {
+    margin-top: 50px;
+}
+
+.middle{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*----------------------------footer---------------------------*/
+.ace-footer {
+    color: black;
+    padding: 30px;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
